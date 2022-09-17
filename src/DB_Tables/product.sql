@@ -1,0 +1,15 @@
+CREATE TABLE products (
+  id serial PRIMARY KEY,
+  product_name VARCHAR(255) UNIQUE NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  metaTitle VARCHAR(255) NULL,
+  slug VARCHAR(255) NOT NULL,
+  summary TEXT NULL,
+  type VARCHAR(255) DEFAULT NULL,
+  price FLOAT NOT NULL DEFAULT 0,
+  discount FLOAT NOT NULL DEFAULT 0,
+  quantity INT NOT NULL DEFAULT 0,
+  atp smallint NOT NULL DEFAULT 1,
+  created_at TIMESTAMP NOT NULL,
+  updated_at TIMESTAMP NOT NULL
+  );
